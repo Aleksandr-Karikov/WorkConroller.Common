@@ -1,0 +1,77 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WorkController.Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "6.14.1"
+        },
+        "runtime": {
+          "WorkController.Common.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {},
+      "Microsoft.IdentityModel.Logging/6.14.1": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "assemblyVersion": "6.14.1.0",
+            "fileVersion": "6.14.1.21103"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/6.14.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.IdentityModel.Logging": "6.14.1",
+          "System.Security.Cryptography.Cng": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "assemblyVersion": "6.14.1.0",
+            "fileVersion": "6.14.1.21103"
+          }
+        }
+      },
+      "System.Security.Cryptography.Cng/4.5.0": {}
+    }
+  },
+  "libraries": {
+    "WorkController.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "path": "microsoft.csharp/4.5.0",
+      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Logging/6.14.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yjB8cYrRwQp/sX0JhpXHggUwF4YhyMoVE0Mzdyc9Z0gFikOej4dUNlnG7H9J5SCmI2xjLAYxinyDIzmGBFqCbg==",
+      "path": "microsoft.identitymodel.logging/6.14.1",
+      "hashPath": "microsoft.identitymodel.logging.6.14.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Tokens/6.14.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-14Z15Rwd0V6+m7mxbRWH2CrT2PK/B3H3R8qGNDeI6lSPFIQTq/1AJaYkCGcVX1xlKSowdNYaAROMaPbiWv8KIQ==",
+      "path": "microsoft.identitymodel.tokens/6.14.1",
+      "hashPath": "microsoft.identitymodel.tokens.6.14.1.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Cng/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
+      "path": "system.security.cryptography.cng/4.5.0",
+      "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    }
+  }
+}
