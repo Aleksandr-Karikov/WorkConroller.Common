@@ -10,3 +10,15 @@ C:\Users\Александр\source\repos\WorkController.Common\obj\Debug\net6.0\
 C:\Users\Александр\source\repos\WorkController.Common\obj\Debug\net6.0\WorkController.Common.dll
 C:\Users\Александр\source\repos\WorkController.Common\obj\Debug\net6.0\ref\WorkController.Common.dll
 C:\Users\Александр\source\repos\WorkController.Common\obj\Debug\net6.0\WorkController.Common.pdb
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\bin\Debug\net6.0\WorkController.Common.deps.json
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\bin\Debug\net6.0\WorkController.Common.dll
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\bin\Debug\net6.0\ref\WorkController.Common.dll
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\bin\Debug\net6.0\WorkController.Common.pdb
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\obj\Debug\net6.0\WorkController.Common.csproj.AssemblyReference.cache
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\obj\Debug\net6.0\WorkController.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\obj\Debug\net6.0\WorkController.Common.AssemblyInfoInputs.cache
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\obj\Debug\net6.0\WorkController.Common.AssemblyInfo.cs
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\obj\Debug\net6.0\WorkController.Common.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\obj\Debug\net6.0\WorkController.Common.dll
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\obj\Debug\net6.0\ref\WorkController.Common.dll
+C:\Users\Александр\source\repos\WorkController\WorkConroller.Common\obj\Debug\net6.0\WorkController.Common.pdb

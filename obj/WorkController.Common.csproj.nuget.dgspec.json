@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Александр\\source\\repos\\WorkController.Common\\WorkController.Common.csproj": {}
+    "C:\\Users\\Александр\\source\\repos\\WorkController\\WorkConroller.Common\\WorkController.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Александр\\source\\repos\\WorkController.Common\\WorkController.Common.csproj": {
+    "C:\\Users\\Александр\\source\\repos\\WorkController\\WorkConroller.Common\\WorkController.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Александр\\source\\repos\\WorkController.Common\\WorkController.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Александр\\source\\repos\\WorkController\\WorkConroller.Common\\WorkController.Common.csproj",
         "projectName": "WorkController.Common",
-        "projectPath": "C:\\Users\\Александр\\source\\repos\\WorkController.Common\\WorkController.Common.csproj",
+        "projectPath": "C:\\Users\\Александр\\source\\repos\\WorkController\\WorkConroller.Common\\WorkController.Common.csproj",
         "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Александр\\source\\repos\\WorkController.Common\\obj\\",
+        "outputPath": "C:\\Users\\Александр\\source\\repos\\WorkController\\WorkConroller.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,9 +44,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.IdentityModel.Tokens": {
+            "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[6.14.1, )"
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
