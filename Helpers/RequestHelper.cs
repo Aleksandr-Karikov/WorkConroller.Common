@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using WorkController.Common.Helper;
@@ -23,8 +24,23 @@ namespace WorkControllerAdmin.Http.Helper
         public static async Task<HttpResponseMessage> SendPostRequest(string URI, IHttpClientFactory _clientFactory, IRequest requestModel)
         {
             var request = new HttpRequestMessage(HttpMethod.Post, URI);
-             var client = _clientFactory.CreateClient("WorkController");
-            return await client.PostAsync(request.RequestUri, await RequestHelper.GetNewHttpContent(requestModel));
+            var client = _clientFactory.CreateClient("WorkController");
+            HttpContent content = await RequestHelper.GetNewHttpContent(requestModel);
+            return await client.PostAsync(request.RequestUri,content );
+        }
+
+        public static async Task<HttpResponseMessage> SendPostAuthRequest(string URI, IHttpClientFactory _clientFactory,string token, IRequest requestModel=null)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Post, URI);
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var client = _clientFactory.CreateClient("WorkController");
+            //client.DefaultRequestHeaders.Authorization =
+            //new AuthenticationHeaderValue("Bearer", token);
+            HttpContent content = null;
+            if (requestModel != null)
+                content = await RequestHelper.GetNewHttpContent(requestModel);
+            var r = await client.PostAsync(request.RequestUri, content);
+            return r;
         }
         public static bool IsValidEmail(string email)
         {
@@ -38,5 +54,7 @@ namespace WorkControllerAdmin.Http.Helper
                 return false;
             }
         }
+
+
     }
 }

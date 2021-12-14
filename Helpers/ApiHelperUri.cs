@@ -10,5 +10,7 @@ namespace WorkControllerAdmin.Http.Helper.ApiHelper
     {
         public static string RegisterUri = "User/register";
         public static string LoginUri = "User/login";
+        public static string GetEmployeesUri = "User/GetEmployees";
+        public static string SetEmployeeUri = "User/SetEmployee";
     }
 }
