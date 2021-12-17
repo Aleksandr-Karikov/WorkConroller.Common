@@ -8,8 +8,9 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using WorkController.Common.Helper;
+using WorkController.Common.Http.Helper.ApiHelper;
 
-namespace WorkControllerAdmin.Http.Helper
+namespace WorkController.Common.Http.Helper
 {
     public static class RequestHelper
     {
@@ -29,14 +30,14 @@ namespace WorkControllerAdmin.Http.Helper
             return await client.PostAsync(request.RequestUri,content );
         }
 
-        public static async Task<HttpResponseMessage> SendPostAuthRequest(string URI, IHttpClientFactory _clientFactory,string token, IRequest requestModel=null)
+        public static async Task<HttpResponseMessage> SendPostAuthRequest(string URI, IHttpClientFactory _clientFactory,string token, IRequest? requestModel =  null)
         {
             var request = new HttpRequestMessage(HttpMethod.Post, URI);
             request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var client = _clientFactory.CreateClient("WorkController");
             //client.DefaultRequestHeaders.Authorization =
             //new AuthenticationHeaderValue("Bearer", token);
-            HttpContent content = null;
+            HttpContent? content = null;
             if (requestModel != null)
                 content = await RequestHelper.GetNewHttpContent(requestModel);
             var r = await client.PostAsync(request.RequestUri, content);
@@ -55,6 +56,19 @@ namespace WorkControllerAdmin.Http.Helper
             }
         }
 
-
+        public static async Task<bool> IsConnectionAlive(IHttpClientFactory _clientFactory)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Post, ApiHelperUri.AliveUri);
+            var client = _clientFactory.CreateClient("WorkController");
+            try
+            {
+                var rezult = await client.PostAsync(request.RequestUri, null);
+                return true;
+            }
+            catch (HttpRequestException)
+            {
+                return false;
+            }
+        }
     }
 }
