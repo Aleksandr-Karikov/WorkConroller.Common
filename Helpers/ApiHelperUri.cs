@@ -15,5 +15,8 @@ namespace WorkController.Common.Http.Helper.ApiHelper
         public static string AliveUri = "User/Alive";
         public static string SetEmployeeUri = "User/SetEmployee";
         public static string SetTime = "User/SetTime";
+        public static string SetMoney = "User/SetMoney";
+        public static string SetPeriod = "User/SetPeriod";
+        public static string GetScreens = "User/GetScreens";
     }
 }
